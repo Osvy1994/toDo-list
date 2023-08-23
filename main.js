@@ -7,6 +7,7 @@ userInput.addEventListener('submit', () => {
 
 
 let addTask = () => {
+  if (input.value) {
   counter++
   let newValue = input.value
   list.innerHTML += `<div class="task-container" id="${counter}">
@@ -18,6 +19,7 @@ let addTask = () => {
 
 input.value = ""
 updateStats()
+  }
 }
 
 let updateStats = () => {
