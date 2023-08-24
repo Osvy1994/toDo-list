@@ -19,6 +19,8 @@ let addTask = () => {
 
 input.value = ""
 updateStats()
+  } else {
+    alert ('Write a task...')
   }
 }
 
